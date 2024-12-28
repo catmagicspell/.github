@@ -156,3 +156,40 @@ ul.navbar  {
 	font-size: 12px;
 	color: darkgray;
 }
+
+@media (max-width: 768px) {
+
+	body {
+		font-size: 14px;
+	}
+
+	.navbar li a {
+  		padding: 10px 15px;
+	}
+
+    .menu, .box {
+        width: 90%; /* Make the menu and box wider on smaller screens */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .title .si {
+        font-size: 30px; /* Reduce font size for smaller screens */
+    }
+
+    .nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 1em; /* Adjust gap between links */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ftr p {
+        font-size: 10px; /* Reduce footer text size for small screens */
+    }
+}
